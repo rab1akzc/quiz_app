@@ -113,13 +113,13 @@ const QuestionCard = ({ question, count, finishedQuiz, setCount, setFinishedQuiz
                 </div>
                 <div className="answers">
                     <ul className="answersList mb-4">
-                        <li><button className={disableButon !== true ? "buttonAnswers" : "buttonAnswers-disabled"}
+                        <li><button className={disableButon !== true ? "buttonAnswers" : "buttonAnswers-disabled"} disabled={disableButon}
                             onClick={approvedChoise} id={question[count].body} value={"A"} name={answerA}  >{"A)" + `${answerA}`}</button></li>
-                        <li> <button className={disableButon !== true ? "buttonAnswers" : "buttonAnswers-disabled"}
+                        <li> <button className={disableButon !== true ? "buttonAnswers" : "buttonAnswers-disabled"} disabled={disableButon}
                             onClick={approvedChoise} id={question[count].body} value={"B"} name={answerB}>{"B)" + `${answerB}`}</button></li>
-                        <li><button className={disableButon !== true ? "buttonAnswers" : "buttonAnswers-disabled"}
+                        <li><button className={disableButon !== true ? "buttonAnswers" : "buttonAnswers-disabled"} disabled={disableButon}
                             onClick={approvedChoise} id={question[count].body} value="C" name={answerC}>{"C)" + `${answerC}`}</button></li>
-                        <li><button className={disableButon !== true ? "buttonAnswers" : "buttonAnswers-disabled"}
+                        <li><button className={disableButon !== true ? "buttonAnswers" : "buttonAnswers-disabled"} disabled={disableButon}
                             onClick={approvedChoise} id={question[count].body} value="D" name={answerD}>{"D)" + `${answerD}`}</button></li>
 
                     </ul>
